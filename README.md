@@ -2,8 +2,8 @@
 <h3 align="center">A passionate full stack developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=muneerali199&label=Profile%20views&color=0e75b6&style=flat" alt="muneerali199" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=muneerali199" alt="muneerali199" /></a> </p>
+<!-- GIF -->
+<img align="right" height="300" width="500" src="https://raw.githubusercontent.com/mikonoid/mikonoid/main/images/gifs/coder3.gif" />
 
 - 🔭 I’m currently working on **Web3 project**
 
@@ -18,6 +18,7 @@
 - 📫 How to reach me **alimuneerali245@gmail.com**
 
 - ⚡ Fun fact **sportsy,artsy and brainy-I am jack-of-all-trades with a passion for living life to the fullest!**
+
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
