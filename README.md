@@ -37,5 +37,4 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=muneerali199&" alt="muneerali199" /></p>
 
-https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 
