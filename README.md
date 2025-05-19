@@ -10,7 +10,7 @@
 - 🌱 **Always learning something new**
 - 🚀 **Building with code, design, and curiosity**
 - 📫 How to reach me: **alimuneerali245@gmail.com**
-- 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Weather App](https://github.com/Muneerali199/weather-app), [Chat App](https://github.com/Muneerali199/chat-app)**
+- 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Uptime](https://github.com/Muneerali199/uptime), [Chat App](https://github.com/Muneerali199/chat-app)**
 
 ---
 
