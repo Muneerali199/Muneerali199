@@ -10,7 +10,7 @@
 - 🌱 **Always learning something new**
 - 🚀 **Building with code, design, and curiosity**
 - 📫 How to reach me: **alimuneerali245@gmail.com**
-- 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Uptime](https://github.com/Muneerali199/uptime), [Ats based resume builder](https://github.com/Muneerali199/job-seeker-latex-canvas)**
+- 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Uptime](https://github.com/Muneerali199/uptime), [Docmagic](https://doc-magic-heob.vercel.app/)**
 
 ---
 
