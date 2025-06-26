@@ -1,15 +1,17 @@
-<h1 align="center">Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="30px" height="30px"> I'm Muneer Ali</h1>
+<h1 align="center">
+  Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="30px" height="30px"> I'm Muneer Ali
+</h1>
 <h3 align="center">A passionate developer from India who loves building beautiful things 🚀</h3>
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=Muneerali199&label=Profile%20views&color=0e75b6&style=flat" alt="Muneerali199" />
 </p>
 
-- 🌐 **Open Source Enthusiast**
-- 🖥️ **Full Stack: React | Node.js | Express | MongoDB**
-- 🌱 **Always learning something new**
-- 🚀 **Building with code, design, and curiosity**
-- 📫 How to reach me: **alimuneerali245@gmail.com**
+- 🌐 **Open Source Enthusiast**  
+- 🖥️ **Full Stack: React | Node.js | Express | MongoDB**  
+- 🌱 **Always learning something new**  
+- 🚀 **Building with code, design, and curiosity**  
+- 📫 How to reach me: **alimuneerali245@gmail.com**  
 - 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Uptime](https://github.com/Muneerali199/uptime), [Docmagic](https://doc-magic-heob.vercel.app/)**
 
 ---
