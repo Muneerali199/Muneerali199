@@ -1,175 +1,101 @@
-<!-- profile view count -->
-<img align="right" src="https://komarev.com/ghpvc/?username=Muneerali199">
+<h1 align="center">Hi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="30px" height="30px"> I'm Muneer Ali</h1>
+<h3 align="center">A passionate developer from India who loves building beautiful things 🚀</h3>
 
-<!-- introduction -->
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+There!+👋;+I'm+Muneer+Ali!;+Full+Stack+Developer+from+India!;&center=true&font=Righteous&size=35">
-  </a>
-</h1>
-
-<br />
-<!-- about me -->
-<p align="center">
-  Hi, I'm <b>Muneer Ali</b>, a passionate developer from India who loves building beautiful things 🚀<br />
-  <br />
-  🌐 <b>Open Source Enthusiast</b><br />
-  🖥️ <b>Full Stack:</b> React | Node.js | Express | MongoDB<br />
-  🌱 <b>Always learning something new</b><br />
-  🚀 <b>Building with code, design, and curiosity</b><br />
-  📫 <b>How to reach me:</b> <a href="mailto:alimuneerali245@gmail.com">alimuneerali245@gmail.com</a><br />
-  💻 <b>Some of my projects:</b> 
-  <a href="https://muneerali.vercel.app/">Portfolio</a>, 
-  <a href="https://github.com/Muneerali199/thunder">website builder</a>, 
-  <a href="https://github.com/Muneerali199/uptime">Uptime</a>, 
-  <a href="https://doc-magic-heob.vercel.app/">Docmagic</a>
-  <br />
+<p align="left">
+  <img src="https://komarev.com/ghpvc/?username=Muneerali199&label=Profile%20views&color=0e75b6&style=flat" alt="Muneerali199" />
 </p>
 
-<!-- social handles -->
-<div align="center"> 
-  <a href="https://twitter.com/muneerali199" target="_blank"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" target="_blank"></a> 
-  <a href="https://linkedin.com/in/muneerali199" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-  <a href="https://discord.gg/your-discord-invite" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" target="_blank"></a>
-  <a href="https://instagram.com/muneerali.dev" target="_blank"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href="mailto:alimuneerali245@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-</div>
+- 🌐 **Open Source Enthusiast**
+- 🖥️ **Full Stack: React | Node.js | Express | MongoDB**
+- 🌱 **Always learning something new**
+- 🚀 **Building with code, design, and curiosity**
+- 📫 How to reach me: **alimuneerali245@gmail.com**
+- 💻 Some of my projects: **[Portfolio](https://muneerali.vercel.app/), [website builder](https://github.com/Muneerali199/thunder), [Uptime](https://github.com/Muneerali199/uptime), [Docmagic](https://doc-magic-heob.vercel.app/)**
 
-<hr />
-<!-- skills -->
-<h2 align="center">🔥 Languages-Frameworks-Tools 🔥</h2>
-<br />
-<p align="center">
-  <a href="https://skillicons.dev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nextjs%2Creact%2Cgit%2Chtml%2Ccss%2Cjavascript%2Cts%2Ctailwind%2Cfigma%2Cthreejs&theme=dark" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://skillicons.dev/icons?i=nextjs%2Creact%2Cgit%2Chtml%2Ccss%2Cjavascript%2Cts%2Ctailwind%2Cfigma%2Cthreejs&theme=light" />
-      <img src="https://skillicons.dev/icons?i=nextjs%2Creact%2Cgit%2Chtml%2Ccss%2Cjavascript%2Cts%2Ctailwind%2Cfigma%2Cthreejs&theme=light" alt="skills - 1" />
-    </picture>
-    <br />
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs%2Cexpress%2Cmongodb%2Cmysql%2Cpostgres%2Credux%2Cprisma%2Cfirebase%2Csupabase&theme=dark" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://skillicons.dev/icons?i=nodejs%2Cexpress%2Cmongodb%2Cmysql%2Cpostgres%2Credux%2Cprisma%2Cfirebase%2Csupabase&theme=light" />
-      <img src="https://skillicons.dev/icons?i=nodejs%2Cexpress%2Cmongodb%2Cmysql%2Cpostgres%2Credux%2Cprisma%2Cfirebase%2Csupabase&theme=light" alt="skills - 2" />
-    </picture>
-  </a>
-</p>
-<br />
+---
 
-<!-- deployment -->
-<h3 align="center">Deployment</h3>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset='https://skillicons.dev/icons?i=planetscale%2Cvercel%2Cnetlify&theme=dark' />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset='https://skillicons.dev/icons?i=planetscale%2Cvercel%2Cnetlify&theme=light' />
-      <img src='https://skillicons.dev/icons?i=planetscale%2Cvercel%2Cnetlify' alt="learning" />
-    </picture>
-  </a>
-  <br />
-  <a href="https://www.logalert.app">
-    <img src='https://img.shields.io/badge/Log-Alert-ca3e54?labelColor=5512ca&style=for-the-badge' alt="learning" />
-  </a>
-</p>
-<hr />
+<h3 align="left">🎧 Spotify Playing</h3>
 
-<!-- spotify -->
-<h3 align="center">🎧 Spotify Playing</h3>
-<p align="center">
-  <a href="https://open.spotify.com/user/31tpqnoarhpaxxz7226elu4w4muy">
-    <img src="https://spotifygit.vercel.app/api/spotify" alt="Spotify Now Playing" />
+[![Spotify](https://spotifygit.vercel.app/api/spotify)](https://open.spotify.com/user/31tpqnoarhpaxxz7226elu4w4muy)
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=Muneerali199&show_icons=true&locale=en&theme=radical&hide_border=true" alt="Muneerali199" />
+    </td>
+    <td>
+      <img src="https://github-readme-streak-stats.herokuapp.com?user=Muneerali199&theme=radical&hide_border=true" alt="Muneerali199" />
+    </td>
+  </tr>
+</table>
+
+---
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left">
+  <a href="https://www.typescriptlang.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="30px" />
+  </a>
+  <a href="https://reactjs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="30px" />
+  </a>
+  <a href="https://nextjs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="30px" />
+  </a>
+  <a href="https://nodejs.org/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="30px" />
+  </a>
+  <a href="https://expressjs.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png" alt="Express" width="30px" />
+  </a>
+  <a href="https://www.mongodb.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="30px" />
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" width="30px" />
+  </a>
+  <a href="https://www.docker.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="30px" />
+  </a>
+  <a href="https://firebase.google.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/25181517/189716855-2c69ca7a-5149-4647-936d-780610911353.png" alt="Firebase" width="30px" />
+  </a>
+  <a href="https://git-scm.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="30px" />
+  </a>
+  <a href="https://www.figma.com/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma" width="30px" />
+  </a>
+  <a href="https://www.java.com/" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="30px" />
+  </a>
+  <a href="https://cloud.google.com/" target="_blank">
+    <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="30px" />
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="30px" />
   </a>
 </p>
 
-<!-- snake graph -->
-<div align="center">
-  <h2>🐍 Snake eating my contribution 🐍</h2>
-  <br />
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Muneerali199/Muneerali199/blob/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github.com/Muneerali199/Muneerali199/blob/output/github-contribution-grid-snake.svg" />
-    <img src="https://github.com/Muneerali199/Muneerali199/blob/output/github-contribution-grid-snake.svg" alt="github-snake" />
-  </picture>
-  <br />
-  <br />
-</div>
+---
 
-<hr />
-
-<!-- stats -->
-<h2 align="center">⚡ Stats ⚡</h2>
-<br />
-<p align=center>
-  <div align=center>
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Muneerali199&theme=radical&hide_border=true" />
-        <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-streak-stats.herokuapp.com?user=Muneerali199&theme=default&border=61dafb" />
-        <img align="left" width=390 src="https://github-readme-streak-stats.herokuapp.com?user=Muneerali199&theme=default&border=61dafb" alt="Muneerali199's streak stats" />
-      </picture>
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Muneerali199&show_icons=true&locale=en&theme=radical&hide_border=true" />
-        <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api?username=Muneerali199&show_icons=true&theme=default&border_color=61dafb" />
-        <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=Muneerali199&show_icons=true&theme=default&border_color=61dafb" alt="Muneerali199's github stats" />
-      </picture>
-    </a>
-  </div>
-  <br /><br /><br /><br /><br /><br /><br /><br /><br />
-  <a href="https://github.com/Ashutosh00710/github-readme-activity-graph" title="Go to Source">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Muneerali199&theme=react-dark" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Muneerali199&bg_color=ffffff&color=708090&line=24292e&point=24292e&area=true&hide_border=true" />
-      <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Muneerali199&bg_color=ffffff&color=708090&line=24292e&point=24292e&area=true&hide_border=true" alt="Muneerali199's contribution graph" />
-    </picture>
+<h3 align="left">Connect with me:</h3>
+<p align="left" style="display: flex; gap: 10px;">
+  <a href="https://twitter.com/muneerali199" target="blank">
+    <img align="center" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-logo-icon.png" alt="twitter" height="30" />
+  </a>
+  <a href="https://linkedin.com/in/muneerali199" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="linkedin" height="30" />
+  </a>
+  <a href="https://discord.gg/your-discord-invite" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="discord" height="30"/>
+  </a>
+  <a href="https://instagram.com/muneerali.dev" target="blank">
+    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="instagram" height="30"/>
   </a>
 </p>
 
-<hr />
-
-<!-- repositories -->
-<h2 align="center">👨‍💻 Repositories 👨‍💻</h2>
-<br />
-<div width="100%" align="center">
-  <a align="right" href="https://github.com/Muneerali199/thunder" title="Thunder Website Builder">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=thunder&theme=radical&border_color=61dafb&border_radius=10" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=thunder&theme=graywhite&border_radius=10" />
-      <img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=thunder&theme=graywhite&border_radius=10" alt="Thunder Website Builder" />
-    </picture>
-  </a>
-  <a align="left" href="https://github.com/Muneerali199/uptime" title="Uptime">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=uptime&theme=radical&border_color=61dafb&border_radius=10" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=uptime&theme=graywhite&border_radius=10" />
-      <img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=uptime&theme=graywhite&border_radius=10" alt="Uptime" />
-    </picture>
-  </a>
-</div>
-<br/><br/><br/><br/><br/><br/>
-<div width="100%" align="center">
-  <a align="left" href="https://github.com/Muneerali199/your-repo" title="Your Project">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=your-repo&theme=radical&border_color=61dafb&border_radius=10" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=your-repo&theme=graywhite&border_radius=10" />
-      <img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=your-repo&theme=graywhite&border_radius=10" alt="Your Project" />
-    </picture>
-  </a>
-  <a align="right" href="https://github.com/Muneerali199/another-repo" title="Another Project">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=another-repo&theme=radical&border_color=61dafb&border_radius=10" />
-      <source media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=another-repo&theme=graywhite&border_radius=10" />
-      <img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=another-repo&theme=graywhite&border_radius=10" alt="Another Project" />
-    </picture>
-  </a>
-</div>
-
-<br /><br /><br /><br /><br /><br />
-
-<h4 align="center">
-  <a href="https://github.com/Muneerali199?tab=repositories" title="Show Repositories">🔎 Show More 🔍</a>
-</h4>
+---
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=90&section=footer"/>
