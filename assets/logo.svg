@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&amp;display=swap');
+
+    /* ── Background shimmer ── */
+    @keyframes shimmer {
+      0%   { stop-color: #0d1117 }
+      50%  { stop-color: #110d1f }
+      100% { stop-color: #0d1117 }
+    }
+    @keyframes shimmer2 {
+      0%   { stop-color: #0a0e17 }
+      50%  { stop-color: #0d0a1a }
+      100% { stop-color: #0a0e17 }
+    }
+
+    /* ── Orb floating ── */
+    @keyframes float1 {
+      0%, 100% { transform: translate(0, 0); opacity: 0.45 }
+      50%      { transform: translate(15px, -20px); opacity: 0.7 }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translate(0, 0); opacity: 0.35 }
+      50%      { transform: translate(-20px, 15px); opacity: 0.6 }
+    }
+    @keyframes float3 {
+      0%, 100% { transform: translate(0, 0); opacity: 0.3 }
+      50%      { transform: translate(10px, 12px); opacity: 0.55 }
+    }
+
+    /* ── Name draw-in + glow ── */
+    @keyframes drawIn {
+      0%   { stroke-dashoffset: 1200; fill-opacity: 0 }
+      60%  { stroke-dashoffset: 0;    fill-opacity: 0 }
+      80%  { stroke-dashoffset: 0;    fill-opacity: 1 }
+      100% { stroke-dashoffset: 0;    fill-opacity: 1 }
+    }
+    @keyframes glowPulse {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(139,92,246,0.6)) }
+      50%      { filter: drop-shadow(0 0 20px rgba(139,92,246,0.9)) drop-shadow(0 0 40px rgba(6,182,212,0.4)) }
+    }
+
+    /* ── Subtitle fade ── */
+    @keyframes fadeUp {
+      0%   { opacity: 0; transform: translateY(12px) }
+      100% { opacity: 1; transform: translateY(0) }
+    }
+
+    /* ── Tag slide in ── */
+    @keyframes slideIn1 { 0% { opacity:0; transform:translateX(-30px) } 100% { opacity:1; transform:translateX(0) } }
+    @keyframes slideIn2 { 0% { opacity:0; transform:translateX(-20px) } 100% { opacity:1; transform:translateX(0) } }
+    @keyframes slideIn3 { 0% { opacity:0; transform:translateX(20px) }  100% { opacity:1; transform:translateX(0) } }
+    @keyframes slideIn4 { 0% { opacity:0; transform:translateX(30px) }  100% { opacity:1; transform:translateX(0) } }
+
+    /* ── Particle twinkle ── */
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; r: 1 }
+      50%      { opacity: 1; r: 2.2 }
+    }
+
+    /* ── Line scan ── */
+    @keyframes scanLine {
+      0%   { x1: -200; x2: -100 }
+      100% { x1: 1000; x2: 1100 }
+    }
+
+    /* ── Border trace ── */
+    @keyframes borderTrace {
+      0%   { stroke-dashoffset: 2200 }
+      100% { stroke-dashoffset: 0 }
+    }
+
+    .bg-stop1 { animation: shimmer 6s ease-in-out infinite }
+    .bg-stop2 { animation: shimmer2 6s ease-in-out infinite }
+
+    .orb1 { animation: float1 6s ease-in-out infinite }
+    .orb2 { animation: float2 8s ease-in-out infinite }
+    .orb3 { animation: float3 7s ease-in-out infinite }
+
+    .name-text {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-weight: 700;
+      font-size: 64px;
+      fill: white;
+      fill-opacity: 0;
+      stroke: #8B5CF6;
+      stroke-width: 2;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawIn 3.5s ease forwards;
+    }
+    .name-glow {
+      animation: glowPulse 4s ease-in-out infinite;
+      animation-delay: 3.5s;
+    }
+
+    .subtitle {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 16px;
+      fill: #a78bfa;
+      letter-spacing: 3px;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards;
+      animation-delay: 3s;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 13px;
+      fill: #0d1117;
+      font-weight: 700;
+    }
+    .tag-pill1 { opacity:0; animation: slideIn1 0.6s ease forwards; animation-delay: 3.4s }
+    .tag-pill2 { opacity:0; animation: slideIn2 0.6s ease forwards; animation-delay: 3.6s }
+    .tag-pill3 { opacity:0; animation: slideIn3 0.6s ease forwards; animation-delay: 3.8s }
+    .tag-pill4 { opacity:0; animation: slideIn4 0.6s ease forwards; animation-delay: 4.0s }
+
+    .particle { animation: twinkle 3s ease-in-out infinite }
+
+    .scan-line {
+      stroke: url(#scanGrad);
+      stroke-width: 1;
+      animation: scanLine 4s linear infinite;
+    }
+
+    .border-rect {
+      stroke-dasharray: 2200;
+      stroke-dashoffset: 2200;
+      animation: borderTrace 3s ease forwards;
+      animation-delay: 0.5s;
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   class="bg-stop1" style="stop-color:#0d1117"/>
+      <stop offset="50%"  class="bg-stop2" style="stop-color:#0a0e17"/>
+      <stop offset="100%" class="bg-stop1" style="stop-color:#0d1117"/>
+    </linearGradient>
+    <radialGradient id="orbGrad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  style="stop-color:#8B5CF6;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="orbGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  style="stop-color:#06b6d4;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="orbGrad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  style="stop-color:#ec4899;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   style="stop-color:#8B5CF6;stop-opacity:0"/>
+      <stop offset="50%"  style="stop-color:#8B5CF6;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   style="stop-color:#8B5CF6"/>
+      <stop offset="50%"  style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="350" rx="16" fill="url(#bgGrad)"/>
+
+  <!-- Animated border trace -->
+  <rect x="2" y="2" width="796" height="346" rx="15" fill="none"
+        stroke="url(#borderGrad)" stroke-width="1.5" class="border-rect"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#8B5CF6" stroke-width="0.3" opacity="0.06">
+    <line x1="0" y1="70"  x2="800" y2="70"/>
+    <line x1="0" y1="140" x2="800" y2="140"/>
+    <line x1="0" y1="210" x2="800" y2="210"/>
+    <line x1="0" y1="280" x2="800" y2="280"/>
+    <line x1="160" y1="0" x2="160" y2="350"/>
+    <line x1="320" y1="0" x2="320" y2="350"/>
+    <line x1="480" y1="0" x2="480" y2="350"/>
+    <line x1="640" y1="0" x2="640" y2="350"/>
+  </g>
+
+  <!-- Floating orbs -->
+  <circle cx="120" cy="100" r="80" fill="url(#orbGrad1)" class="orb1"/>
+  <circle cx="680" cy="250" r="90" fill="url(#orbGrad2)" class="orb2"/>
+  <circle cx="650" cy="70"  r="60" fill="url(#orbGrad3)" class="orb3"/>
+
+  <!-- Scan line -->
+  <line x1="-200" y1="170" x2="-100" y2="170" class="scan-line"/>
+
+  <!-- Particles -->
+  <circle cx="150" cy="60"  r="1.5" fill="#8B5CF6" class="particle" style="animation-delay:0s"/>
+  <circle cx="350" cy="290" r="1.5" fill="#06b6d4" class="particle" style="animation-delay:0.5s"/>
+  <circle cx="600" cy="50"  r="1.5" fill="#f59e0b" class="particle" style="animation-delay:1s"/>
+  <circle cx="700" cy="180" r="1.5" fill="#ec4899" class="particle" style="animation-delay:1.5s"/>
+  <circle cx="100" cy="250" r="1.5" fill="#7ee787" class="particle" style="animation-delay:2s"/>
+  <circle cx="450" cy="40"  r="1.5" fill="#8B5CF6" class="particle" style="animation-delay:2.5s"/>
+  <circle cx="250" cy="310" r="1.5" fill="#06b6d4" class="particle" style="animation-delay:0.8s"/>
+  <circle cx="550" cy="300" r="1.5" fill="#f59e0b" class="particle" style="animation-delay:1.8s"/>
+
+  <!-- Corner brackets -->
+  <path d="M16,16 L50,16 L50,22 M16,16 L16,50 L22,50" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M784,16 L750,16 L750,22 M784,16 L784,50 L778,50" stroke="#06b6d4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M16,334 L50,334 L50,328 M16,334 L16,300 L22,300" stroke="#06b6d4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M784,334 L750,334 L750,328 M784,334 L784,300 L778,300" stroke="#ec4899" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- ═══ MAIN NAME ═══ -->
+  <g class="name-glow" transform="translate(400, 155)">
+    <text x="0" y="0" text-anchor="middle" class="name-text">
+      Muneer Ali
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="400" y="200" text-anchor="middle" class="subtitle">
+    FULL-STACK  ·  BLOCKCHAIN  ·  AI / ML
+  </text>
+
+  <!-- Tag pills row -->
+  <g class="tag-pill1" transform="translate(150, 250)">
+    <rect width="110" height="30" rx="15" fill="#8B5CF6"/>
+    <text x="55" y="20" text-anchor="middle" class="tag">Developer</text>
+  </g>
+  <g class="tag-pill2" transform="translate(275, 250)">
+    <rect width="115" height="30" rx="15" fill="#06b6d4"/>
+    <text x="57" y="20" text-anchor="middle" class="tag">Open Source</text>
+  </g>
+  <g class="tag-pill3" transform="translate(405, 250)">
+    <rect width="105" height="30" rx="15" fill="#f59e0b"/>
+    <text x="52" y="20" text-anchor="middle" class="tag">Builder</text>
+  </g>
+  <g class="tag-pill4" transform="translate(525, 250)">
+    <rect width="120" height="30" rx="15" fill="#ec4899"/>
+    <text x="60" y="20" text-anchor="middle" class="tag">Delhi, India</text>
+  </g>
+
+  <!-- Bottom accent line -->
+  <line x1="200" y1="310" x2="600" y2="310" stroke="url(#borderGrad)" stroke-width="1" opacity="0.4"/>
+</svg>
