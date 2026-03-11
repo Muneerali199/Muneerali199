@@ -200,11 +200,15 @@ const muneer = {
 ## Projects
 
 <div align="center">
+  <a href="https://github.com/Muneerali199?tab=repositories">
+    <img src="./assets/projects.svg" width="100%" alt="Featured Projects" />
+  </a>
+</div>
 
-[![DraftdeckAI](https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=Draftdeckai&hide_border=true&bg_color=0d1117&title_color=8B5CF6&icon_color=06b6d4&text_color=a78bfa)](https://github.com/Muneerali199/Draftdeckai)
-[![Thunder](https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=thunder&hide_border=true&bg_color=0d1117&title_color=f59e0b&icon_color=ec4899&text_color=a78bfa)](https://github.com/Muneerali199/thunder)
-[![Uptime](https://github-readme-stats.vercel.app/api/pin/?username=Muneerali199&repo=uptime&hide_border=true&bg_color=0d1117&title_color=06b6d4&icon_color=8B5CF6&text_color=a78bfa)](https://github.com/Muneerali199/uptime)
-
+<div align="center">
+  <a href="https://github.com/Muneerali199/Draftdeckai"><img src="https://img.shields.io/badge/DraftdeckAI-8B5CF6?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Muneerali199/thunder"><img src="https://img.shields.io/badge/Thunder-f59e0b?style=flat-square&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/Muneerali199/uptime"><img src="https://img.shields.io/badge/Uptime-06b6d4?style=flat-square&logo=github&logoColor=white" /></a>
 </div>
 
 <br/>
