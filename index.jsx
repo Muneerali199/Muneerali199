@@ -16,7 +16,7 @@ export const ReadmeUI = () => {
         boxSizing: 'border-box',
       }}
     >
-      <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+      <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
         <defs>
           <filter id="fluid-glow" x="-50%" y="-50%" width="200%" height="200%">
             <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="4" result="noise" />
@@ -39,7 +39,7 @@ export const ReadmeUI = () => {
         <circle cx="1000" cy="500" r="180" fill="rgba(236, 72, 153, 0.12)" filter="url(#fluid-glow)" />
       </svg>
 
-      <div style={{ display: 'flex', flexDirection: 'column', zIndex: 10, marginBottom: '64px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '48px' }}>
         <h1
           style={{
             fontSize: '72px',
@@ -53,6 +53,7 @@ export const ReadmeUI = () => {
         </h1>
         <h2
           style={{
+            display: 'flex',
             fontSize: '24px',
             fontWeight: 400,
             color: '#A1A1AA',
@@ -61,11 +62,11 @@ export const ReadmeUI = () => {
             fontFamily: 'Fira Code',
           }}
         >
-          <span style={{ color: '#6366F1' }}>const</span> role = <span style={{ color: '#10B981' }}>'Principal Design Engineer'</span>;
+          <span style={{ color: '#6366F1', marginRight: '8px' }}>const</span> role = <span style={{ color: '#10B981', marginLeft: '8px' }}>'Principal Design Engineer'</span>;
         </h2>
       </div>
 
-      <div style={{ display: 'flex', gap: '24px', flex: 1, zIndex: 10, width: '100%' }}>
+      <div style={{ display: 'flex', gap: '24px', flex: 1, width: '100%' }}>
         
         <div
           style={{
@@ -76,8 +77,6 @@ export const ReadmeUI = () => {
             borderRadius: '24px',
             padding: '32px',
             flexDirection: 'column',
-            position: 'relative',
-            overflow: 'hidden',
           }}
         >
           <h3 style={{ fontSize: '14px', color: '#71717A', margin: 0, fontFamily: 'Fira Code', letterSpacing: '0.1em' }}>
@@ -86,22 +85,28 @@ export const ReadmeUI = () => {
           <div
             style={{
               display: 'flex',
-              position: 'absolute',
-              top: '55%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              width: 240,
-              height: 240,
-              borderRadius: '50%',
-              border: '1px dashed rgba(255,255,255,0.15)',
+              flex: 1,
               justifyContent: 'center',
               alignItems: 'center',
             }}
           >
-            <div style={{ width: 60, height: 60, background: '#ffffff', borderRadius: '50%', boxShadow: '0 0 40px rgba(255,255,255,0.3)' }} />
-            <div style={{ position: 'absolute', top: -12, left: 108, width: 24, height: 24, background: '#61DAFB', borderRadius: '50%', boxShadow: '0 0 20px #61DAFB' }} />
-            <div style={{ position: 'absolute', bottom: 30, right: 10, width: 24, height: 24, background: '#3178C6', borderRadius: '50%', boxShadow: '0 0 20px #3178C6' }} />
-            <div style={{ position: 'absolute', bottom: 30, left: 10, width: 24, height: 24, background: '#F7DF1E', borderRadius: '50%', boxShadow: '0 0 20px #F7DF1E' }} />
+            <div
+              style={{
+                display: 'flex',
+                position: 'relative',
+                width: 240,
+                height: 240,
+                borderRadius: '50%',
+                border: '1px dashed rgba(255,255,255,0.15)',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <div style={{ width: 60, height: 60, background: '#ffffff', borderRadius: '50%', boxShadow: '0 0 40px rgba(255,255,255,0.3)' }} />
+              <div style={{ position: 'absolute', top: -12, left: 108, width: 24, height: 24, background: '#61DAFB', borderRadius: '50%' }} />
+              <div style={{ position: 'absolute', bottom: 30, right: 10, width: 24, height: 24, background: '#3178C6', borderRadius: '50%' }} />
+              <div style={{ position: 'absolute', bottom: 30, left: 10, width: 24, height: 24, background: '#F7DF1E', borderRadius: '50%' }} />
+            </div>
           </div>
         </div>
 
@@ -116,30 +121,22 @@ export const ReadmeUI = () => {
               borderRadius: '24px',
               padding: '32px',
               flexDirection: 'column',
-              position: 'relative',
+              overflow: 'hidden',
             }}
           >
             <h3 style={{ fontSize: '14px', color: '#71717A', margin: 0, fontFamily: 'Fira Code', letterSpacing: '0.1em' }}>
               // SYSTEM_PULSE
             </h3>
-            <svg width="100%" height="100%" viewBox="0 0 400 120" style={{ position: 'absolute', bottom: 0, left: 0 }}>
-              <defs>
-                <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
-                  <feGaussianBlur stdDeviation="6" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
-              </defs>
-              <path 
-                d="M 0 80 L 80 80 L 110 30 L 140 110 L 170 10 L 210 90 L 240 80 L 400 80"
-                fill="none" 
-                stroke="#10B981" 
-                strokeWidth="4" 
-                filter="url(#neon-glow)"
-              />
-            </svg>
+            <div style={{ display: 'flex', flex: 1, position: 'relative', marginTop: '16px' }}>
+              <svg width="100%" height="100%" viewBox="0 0 400 120" style={{ position: 'absolute', top: 0, left: 0 }}>
+                <path 
+                  d="M 0 60 L 80 60 L 110 10 L 140 110 L 170 30 L 210 90 L 240 60 L 400 60"
+                  fill="none" 
+                  stroke="#10B981" 
+                  strokeWidth="4" 
+                />
+              </svg>
+            </div>
           </div>
 
           <div
@@ -157,9 +154,11 @@ export const ReadmeUI = () => {
             <h3 style={{ fontSize: '14px', color: '#71717A', margin: '0 0 16px 0', fontFamily: 'Fira Code', letterSpacing: '0.1em' }}>
               // CURRENT_FOCUS
             </h3>
-            <p style={{ fontSize: '22px', color: '#E4E4E7', margin: 0, lineHeight: 1.4, fontWeight: 500 }}>
-              Architecting <span style={{ color: '#A78BFA' }}>scalable distributed systems</span> and exploring the bleeding edge of <span style={{ color: '#F472B6' }}>generative UI</span>.
-            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', fontSize: '22px', color: '#E4E4E7', margin: 0, lineHeight: 1.4, fontWeight: 500 }}>
+              <span style={{ display: 'flex' }}>Architecting <span style={{ color: '#A78BFA', marginLeft: '6px' }}>scalable distributed systems</span></span>
+              <span style={{ display: 'flex' }}>and exploring the bleeding edge of</span>
+              <span style={{ display: 'flex' }}><span style={{ color: '#F472B6', marginRight: '6px' }}>generative UI</span>.</span>
+            </div>
           </div>
           
         </div>
