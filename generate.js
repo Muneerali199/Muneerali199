@@ -39,8 +39,8 @@ async function generateMasterpiece() {
     }
   );
 
-  // Safely make SVG responsive without duplicate attributes
-  svg = svg.replace('width="1200" height="630"', 'width="100%" height="auto"');
+  // FIX: height="auto" breaks SVG render in markdown. Instead, rely on viewBox and 100% width.
+  svg = svg.replace('width="1200" height="630"', 'width="100%" viewBox="0 0 1200 630"');
 
   const styleBlock = `
     <style>
