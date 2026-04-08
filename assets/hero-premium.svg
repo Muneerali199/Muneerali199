@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
+  <defs>
+    <!-- Background Space Void -->
+    <radialGradient id="voidGrad" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#1c1136"/>
+      <stop offset="50%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Glowing Orbs -->
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(168, 85, 247, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(168, 85, 247, 0)"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.3)"/>
+      <stop offset="100%" stop-color="rgba(6, 182, 212, 0)"/>
+    </radialGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+
+    <!-- Filters for Bloom/Glow -->
+    <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* System fonts for pristine, native rendering without external network requests */
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 68px;
+      letter-spacing: -2px;
+      fill: url(#textGrad);
+    }
+    
+    .subtitle {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 2px;
+      fill: #8b5cf6;
+    }
+
+    .body-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      fill: #94a3b8;
+    }
+
+    /* Core Animations */
+    @keyframes orbOrbit {
+      0%   { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+    }
+
+    @keyframes orbOrbitSlow {
+      0%   { transform: rotate(180deg) translateX(160px) rotate(-180deg); }
+      100% { transform: rotate(540deg) translateX(160px) rotate(-540deg); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50%      { opacity: 1; transform: scale(1.1); }
+    }
+
+    @keyframes gridPan {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(40px); }
+    }
+
+    @keyframes dashTrace {
+      0%   { stroke-dashoffset: 1000; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    /* Applying Animations */
+    .anim-orb-1 { animation: orbOrbit 14s linear infinite; transform-origin: 800px 175px; }
+    .anim-orb-2 { animation: orbOrbitSlow 20s linear infinite; transform-origin: 800px 175px; }
+    
+    .anim-glow-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 200px 50px; }
+    .anim-glow-2 { animation: pulseGlow 8s ease-in-out infinite reverse; transform-origin: 800px 250px; }
+    
+    .anim-grid { animation: gridPan 4s linear infinite; }
+    
+    .anim-ring {
+      stroke-dasharray: 40 20;
+      animation: dashTrace 20s linear infinite;
+    }
+    
+    .anim-ring-solid {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dashTrace 3s ease-out forwards;
+      animation-delay: 0.5s;
+    }
+  </style>
+
+  <!-- Deep Void Background -->
+  <rect width="100%" height="100%" fill="url(#voidGrad)"/>
+
+  <!-- Panning Cyber Grid -->
+  <svg x="0" y="-40" width="100%" height="120%">
+    <rect width="100%" height="100%" fill="url(#cyberGrid)" class="anim-grid"/>
+  </svg>
+  <!-- Fade out bottom of grid -->
+  <rect width="100%" height="100%" fill="url(#voidGrad)" opacity="0.6"/>
+
+  <!-- Ambient Glows -->
+  <circle cx="200" cy="50" r="300" fill="url(#glowPurple)" class="anim-glow-1"/>
+  <circle cx="850" cy="300" r="350" fill="url(#glowCyan)" class="anim-glow-2"/>
+
+  <!-- Orbital Rings on the Right -->
+  <g transform="translate(800, 175)">
+    <!-- Outer faint ring -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <!-- Inner dashed ring -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="rgba(6, 182, 212, 0.4)" stroke-width="2" class="anim-ring"/>
+    <!-- Solid trace ring -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="rgba(168, 85, 247, 0.6)" stroke-width="2" class="anim-ring-solid" filter="url(#bloom)"/>
+    
+    <!-- Center Core Node -->
+    <circle cx="0" cy="0" r="40" fill="#000000" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="12" fill="#ffffff" filter="url(#bloom)"/>
+    
+    <!-- Rotating Nodes -->
+    <g class="anim-orb-1">
+      <circle cx="0" cy="0" r="6" fill="#06b6d4" filter="url(#bloom)"/>
+    </g>
+    <g class="anim-orb-2">
+      <circle cx="0" cy="0" r="8" fill="#a855f7" filter="url(#bloom)"/>
+    </g>
+  </g>
+
+  <!-- Typography Content -->
+  <g transform="translate(80, 140)">
+    <text x="0" y="0" class="subtitle">// INITIATE_SEQUENCE</text>
+    <text x="0" y="60" class="title">MUNEER ALI</text>
+    <text x="0" y="100" class="body-text">Architecting scalable systems and designing</text>
+    <text x="0" y="126" class="body-text">beautiful digital experiences at the edge of the web.</text>
+  </g>
+
+  <!-- Small accent line -->
+  <line x1="80" y1="280" x2="160" y2="280" stroke="#8b5cf6" stroke-width="3" filter="url(#bloom)"/>
+</svg>

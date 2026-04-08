@@ -1,6 +1,10 @@
 <!-- ANIMATED LOGO -->
 <div align="center">
-  <img src="./assets/logo.svg" width="100%" alt="Muneer Ali" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-premium.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-premium.svg">
+    <img alt="Muneer Ali" src="./assets/hero-premium.svg" width="100%">
+  </picture>
 </div>
 
 <!-- TYPING -->
