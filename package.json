@@ -1,0 +1,28 @@
+{
+  "name": "muneerali199",
+  "version": "1.0.0",
+  "description": "<!-- ANIMATED LOGO --> <div align=\"center\">   <img src=\"./assets/logo.svg\" width=\"100%\" alt=\"Muneer Ali\" /> </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muneerali199/Muneerali199.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Muneerali199/Muneerali199/issues"
+  },
+  "homepage": "https://github.com/Muneerali199/Muneerali199#readme",
+  "dependencies": {
+    "@fontsource/fira-code": "^5.2.7",
+    "@fontsource/inter": "^5.2.8",
+    "react": "^19.2.4",
+    "satori": "^0.26.0",
+    "tsx": "^4.21.0"
+  }
+}
