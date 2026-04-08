@@ -1,160 +1,246 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="100%" height="100%">
   <defs>
-    <!-- Background Space Void -->
-    <radialGradient id="voidGrad" cx="50%" cy="0%" r="80%">
-      <stop offset="0%" stop-color="#1c1136"/>
-      <stop offset="50%" stop-color="#0a0a0a"/>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#050505"/>
       <stop offset="100%" stop-color="#000000"/>
     </radialGradient>
-
-    <!-- Glowing Orbs -->
-    <radialGradient id="glowPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(168, 85, 247, 0.4)"/>
-      <stop offset="100%" stop-color="rgba(168, 85, 247, 0)"/>
-    </radialGradient>
-    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="rgba(6, 182, 212, 0.3)"/>
-      <stop offset="100%" stop-color="rgba(6, 182, 212, 0)"/>
+    
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(139, 92, 246, 0.5)"/>
+      <stop offset="50%" stop-color="rgba(6, 182, 212, 0.2)"/>
+      <stop offset="100%" stop-color="rgba(0, 0, 0, 0)"/>
     </radialGradient>
 
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="textShimmer" x1="0%" y1="0%" x2="200%" y2="0%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="50%" stop-color="#e2e8f0"/>
-      <stop offset="100%" stop-color="#94a3b8"/>
+      <stop offset="25%" stop-color="#a78bfa"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.05)"/>
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.01)"/>
+    </linearGradient>
+    
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(139, 92, 246, 0.5)"/>
+      <stop offset="50%" stop-color="rgba(6, 182, 212, 0.1)"/>
+      <stop offset="100%" stop-color="rgba(236, 72, 153, 0.3)"/>
+    </linearGradient>
 
-    <!-- Filters for Bloom/Glow -->
-    <filter id="bloom" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+    <!-- Filters -->
+    <filter id="neonBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="heavyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Dot Matrix Pattern -->
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
   </defs>
 
   <style>
-    /* System fonts for pristine, native rendering without external network requests */
+    /* System Typography for Ultra-Crisp Rendering */
     .title {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-weight: 800;
-      font-size: 68px;
-      letter-spacing: -2px;
-      fill: url(#textGrad);
+      font-weight: 900;
+      font-size: 56px;
+      letter-spacing: -1.5px;
+      fill: url(#textShimmer);
+      animation: shimmerText 8s linear infinite;
     }
     
-    .subtitle {
+    .role-badge-text {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-weight: 500;
-      font-size: 16px;
-      letter-spacing: 2px;
-      fill: #8b5cf6;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      fill: #22d3ee;
     }
 
-    .body-text {
+    .desc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-weight: 400;
-      font-size: 18px;
+      font-size: 16px;
       fill: #94a3b8;
+      line-height: 1.6;
     }
 
-    /* Core Animations */
-    @keyframes orbOrbit {
-      0%   { transform: rotate(0deg) translateX(120px) rotate(0deg); }
-      100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+    .highlight {
+      fill: #c084fc;
+      font-weight: 600;
     }
 
-    @keyframes orbOrbitSlow {
-      0%   { transform: rotate(180deg) translateX(160px) rotate(-180deg); }
-      100% { transform: rotate(540deg) translateX(160px) rotate(-540deg); }
+    /* Keyframes */
+    @keyframes shimmerText {
+      0% { fill: url(#textShimmer); }
+      100% { fill: url(#textShimmer); } /* Faking gradient pan via SVG natively is hard, so we use a subtle opacity shift on a duplicate layer */
     }
 
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.5; transform: scale(1); }
-      50%      { opacity: 1; transform: scale(1.1); }
+    @keyframes float1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
     }
 
-    @keyframes gridPan {
-      0%   { transform: translateY(0); }
-      100% { transform: translateY(40px); }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 0.4; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
     }
 
-    @keyframes dashTrace {
-      0%   { stroke-dashoffset: 1000; }
-      100% { stroke-dashoffset: 0; }
+    @keyframes spinRight {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
-    /* Applying Animations */
-    .anim-orb-1 { animation: orbOrbit 14s linear infinite; transform-origin: 800px 175px; }
-    .anim-orb-2 { animation: orbOrbitSlow 20s linear infinite; transform-origin: 800px 175px; }
+    @keyframes spinLeft {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    @keyframes energyFlow {
+      to { stroke-dashoffset: -100; }
+    }
+
+    @keyframes dataStream {
+      0% { stroke-dashoffset: 600; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { stroke-dashoffset: -600; opacity: 0; }
+    }
+
+    @keyframes particleDrift {
+      0% { transform: translate(0, 0) scale(1); opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { transform: translate(150px, -150px) scale(0); opacity: 0; }
+    }
+
+    /* Classes */
+    .glass-card {
+      animation: float1 6s ease-in-out infinite;
+    }
     
-    .anim-glow-1 { animation: pulseGlow 6s ease-in-out infinite; transform-origin: 200px 50px; }
-    .anim-glow-2 { animation: pulseGlow 8s ease-in-out infinite reverse; transform-origin: 800px 250px; }
-    
-    .anim-grid { animation: gridPan 4s linear infinite; }
-    
-    .anim-ring {
-      stroke-dasharray: 40 20;
-      animation: dashTrace 20s linear infinite;
+    .status-dot {
+      animation: pulseDot 2s ease-in-out infinite;
+      transform-origin: center;
     }
-    
-    .anim-ring-solid {
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-      animation: dashTrace 3s ease-out forwards;
-      animation-delay: 0.5s;
+
+    .hex-1 { animation: spinRight 30s linear infinite; transform-origin: center; }
+    .hex-2 { animation: spinLeft 40s linear infinite; transform-origin: center; }
+    .hex-3 { animation: spinRight 50s linear infinite; transform-origin: center; }
+
+    .energy-ring {
+      stroke-dasharray: 8 12;
+      animation: energyFlow 2s linear infinite;
     }
+
+    .data-line {
+      stroke-dasharray: 100 600;
+      animation: dataStream 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .p1 { animation: particleDrift 4s linear infinite 0.1s; }
+    .p2 { animation: particleDrift 5s linear infinite 1.2s; }
+    .p3 { animation: particleDrift 4.5s linear infinite 2.5s; }
+    .p4 { animation: particleDrift 6s linear infinite 0.8s; }
   </style>
 
-  <!-- Deep Void Background -->
-  <rect width="100%" height="100%" fill="url(#voidGrad)"/>
+  <!-- 1. Deep Space Void & Dot Matrix -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+  <rect width="100%" height="100%" fill="url(#dotGrid)"/>
 
-  <!-- Panning Cyber Grid -->
-  <svg x="0" y="-40" width="100%" height="120%">
-    <rect width="100%" height="100%" fill="url(#cyberGrid)" class="anim-grid"/>
-  </svg>
-  <!-- Fade out bottom of grid -->
-  <rect width="100%" height="100%" fill="url(#voidGrad)" opacity="0.6"/>
+  <!-- Ambient Light Leaks -->
+  <circle cx="800" cy="175" r="250" fill="url(#coreGlow)" filter="url(#heavyGlow)"/>
+  <circle cx="100" cy="50" r="200" fill="rgba(139, 92, 246, 0.15)" filter="url(#heavyGlow)"/>
 
-  <!-- Ambient Glows -->
-  <circle cx="200" cy="50" r="300" fill="url(#glowPurple)" class="anim-glow-1"/>
-  <circle cx="850" cy="300" r="350" fill="url(#glowCyan)" class="anim-glow-2"/>
-
-  <!-- Orbital Rings on the Right -->
-  <g transform="translate(800, 175)">
-    <!-- Outer faint ring -->
-    <circle cx="0" cy="0" r="160" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-    <!-- Inner dashed ring -->
-    <circle cx="0" cy="0" r="120" fill="none" stroke="rgba(6, 182, 212, 0.4)" stroke-width="2" class="anim-ring"/>
-    <!-- Solid trace ring -->
-    <circle cx="0" cy="0" r="120" fill="none" stroke="rgba(168, 85, 247, 0.6)" stroke-width="2" class="anim-ring-solid" filter="url(#bloom)"/>
+  <!-- 2. The Glassmorphic Bento Card (Left) -->
+  <g class="glass-card" transform="translate(60, 60)">
+    <!-- Card Background -->
+    <rect width="480" height="230" rx="24" fill="url(#cardGrad)" stroke="url(#borderGrad)" stroke-width="1.5" filter="drop-shadow(0 20px 30px rgba(0,0,0,0.5))"/>
     
-    <!-- Center Core Node -->
-    <circle cx="0" cy="0" r="40" fill="#000000" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
-    <circle cx="0" cy="0" r="12" fill="#ffffff" filter="url(#bloom)"/>
+    <!-- Top Badge -->
+    <g transform="translate(35, 35)">
+      <rect width="210" height="28" rx="14" fill="rgba(34, 211, 238, 0.1)" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1"/>
+      <circle cx="15" cy="14" r="4" fill="#22d3ee" class="status-dot" filter="url(#neonBlur)"/>
+      <text x="30" y="19" class="role-badge-text">PRINCIPAL ENGINEER</text>
+    </g>
+
+    <!-- Name & Info -->
+    <g transform="translate(35, 105)">
+      <text x="0" y="0" class="title">Muneer Ali</text>
+      <text x="0" y="40" class="desc">Designing <tspan class="highlight">billion-dollar</tspan> digital experiences</text>
+      <text x="0" y="65" class="desc">and architecting distributed AI ecosystems.</text>
+    </g>
     
-    <!-- Rotating Nodes -->
-    <g class="anim-orb-1">
-      <circle cx="0" cy="0" r="6" fill="#06b6d4" filter="url(#bloom)"/>
-    </g>
-    <g class="anim-orb-2">
-      <circle cx="0" cy="0" r="8" fill="#a855f7" filter="url(#bloom)"/>
-    </g>
+    <!-- Decorative bottom line in card -->
+    <path d="M 35 195 L 445 195" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <path d="M 35 195 L 150 195" fill="none" stroke="#a855f7" stroke-width="2" filter="url(#neonBlur)"/>
   </g>
 
-  <!-- Typography Content -->
-  <g transform="translate(80, 140)">
-    <text x="0" y="0" class="subtitle">// INITIATE_SEQUENCE</text>
-    <text x="0" y="60" class="title">MUNEER ALI</text>
-    <text x="0" y="100" class="body-text">Architecting scalable systems and designing</text>
-    <text x="0" y="126" class="body-text">beautiful digital experiences at the edge of the web.</text>
-  </g>
+  <!-- 3. Dynamic Data Streams (Background crossing) -->
+  <path d="M -100 280 C 200 280, 300 100, 1100 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  <path d="M -100 280 C 200 280, 300 100, 1100 100" fill="none" stroke="#22d3ee" stroke-width="2" class="data-line" filter="url(#neonBlur)"/>
+  
+  <path d="M -100 320 C 400 320, 600 250, 1100 250" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <path d="M -100 320 C 400 320, 600 250, 1100 250" fill="none" stroke="#ec4899" stroke-width="2" class="data-line" filter="url(#neonBlur)" style="animation-delay: 2s; stroke-dasharray: 50 600;"/>
 
-  <!-- Small accent line -->
-  <line x1="80" y1="280" x2="160" y2="280" stroke="#8b5cf6" stroke-width="3" filter="url(#bloom)"/>
+  <!-- 4. Cybernetic Neural Core (Right) -->
+  <g transform="translate(780, 175)">
+    
+    <!-- Outer Orbit Rings -->
+    <circle cx="0" cy="0" r="140" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#8b5cf6" stroke-width="2" class="energy-ring" filter="url(#neonBlur)"/>
+
+    <!-- Rotating Hexagonal Constructs -->
+    <g class="hex-1">
+      <polygon points="0,-100 86.6,-50 86.6,50 0,100 -86.6,50 -86.6,-50" fill="none" stroke="rgba(34, 211, 238, 0.3)" stroke-width="1.5"/>
+      <circle cx="86.6" cy="-50" r="3" fill="#22d3ee" filter="url(#neonBlur)"/>
+      <circle cx="-86.6" cy="50" r="3" fill="#22d3ee" filter="url(#neonBlur)"/>
+    </g>
+
+    <g class="hex-2">
+      <polygon points="0,-80 69.3,-40 69.3,40 0,80 -69.3,40 -69.3,-40" fill="none" stroke="rgba(236, 72, 153, 0.4)" stroke-width="2"/>
+      <circle cx="0" cy="-80" r="4" fill="#ec4899" filter="url(#neonBlur)"/>
+      <circle cx="0" cy="80" r="4" fill="#ec4899" filter="url(#neonBlur)"/>
+    </g>
+
+    <g class="hex-3">
+      <polygon points="0,-120 103.9,-60 103.9,60 0,120 -103.9,60 -103.9,-60" fill="none" stroke="rgba(139, 92, 246, 0.2)" stroke-width="1"/>
+    </g>
+
+    <!-- The Core -->
+    <circle cx="0" cy="0" r="25" fill="#050505" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="0" cy="0" r="12" fill="#ffffff" filter="url(#neonBlur)" class="status-dot"/>
+
+    <!-- Radiating Connection Lines -->
+    <g opacity="0.3">
+      <line x1="0" y1="-25" x2="0" y2="-140" stroke="#22d3ee" stroke-width="1" stroke-dasharray="2 4"/>
+      <line x1="21.6" y1="12.5" x2="121.2" y2="70" stroke="#a855f7" stroke-width="1" stroke-dasharray="2 4"/>
+      <line x1="-21.6" y1="12.5" x2="-121.2" y2="70" stroke="#ec4899" stroke-width="1" stroke-dasharray="2 4"/>
+    </g>
+
+    <!-- Drifting Particles -->
+    <circle cx="20" cy="-20" r="2" fill="#22d3ee" class="p1" filter="url(#neonBlur)"/>
+    <circle cx="-30" cy="10" r="1.5" fill="#a855f7" class="p2" filter="url(#neonBlur)"/>
+    <circle cx="-10" cy="-40" r="2.5" fill="#ec4899" class="p3" filter="url(#neonBlur)"/>
+    <circle cx="40" cy="30" r="2" fill="#ffffff" class="p4" filter="url(#neonBlur)"/>
+    
+  </g>
 </svg>
