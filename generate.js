@@ -39,13 +39,9 @@ async function generateMasterpiece() {
     }
   );
 
-  // THE SECRET SAUCE - RESPONSIVENESS AND ANIMATIONS
-  // 1. Swap hardcoded width/height for viewBox to ensure perfect responsive scaling on Mobile/Desktop
-  svg = svg.replace('width="1200" height="630"', 'viewBox="0 0 1200 630" width="100%" height="auto"');
+  // Safely make SVG responsive without duplicate attributes
+  svg = svg.replace('width="1200" height="630"', 'width="100%" height="auto"');
 
-  // 2. Inject CSS animations. Note: GitHub blocks raw cursor `:hover` events on <img> SVGs for security. 
-  // To achieve the premium feeling you want, we inject Continuous Ambient Keyframe Animations instead.
-  // This makes the graphic feel alive and breathing without requiring manual cursor interaction.
   const styleBlock = `
     <style>
       @keyframes float {
@@ -83,12 +79,13 @@ async function generateMasterpiece() {
       /* Orbiting Tech Stack */
       #orbit-group {
         animation: rotateOrbit 20s linear infinite;
+        transform-origin: center;
       }
     </style>
   `;
 
-  // Append style block right before closing SVG tag
-  svg = svg.replace('</svg>', styleBlock + '</svg>');
+  // Safely inject style right after opening root SVG tag
+  svg = svg.replace(/(<svg[^>]*>)/i, '$1' + styleBlock);
 
   await fs.writeFile('readme-header.svg', svg);
   console.log('✅ Animated Masterpiece generated: readme-header.svg');
