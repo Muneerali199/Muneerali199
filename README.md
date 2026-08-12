@@ -1,9 +1,6 @@
 <p align="center">
   <a href="https://github.com/Muneerali199">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/dark_mode.svg">
-      <img alt="Muneer Ali — Full-stack developer and Web3 builder" src="./assets/light_mode.svg" width="100%">
-    </picture>
+    <img alt="Muneer Ali — Full-stack developer and Web3 builder" src="./assets/light_mode.svg?v=2" width="100%">
   </a>
 </p>
 
