@@ -1,0 +1,67 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Muneer Ali — Full-stack developer and Web3 builder</title>
+  <desc id="desc">A profile banner with a portrait of Muneer Ali and a summary of his work.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFBEB"/>
+      <stop offset="0.5" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="750" y1="90" x2="1200" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <clipPath id="portraitClip">
+      <rect x="82" y="82" width="408" height="476" rx="204"/>
+    </clipPath>
+    <filter id="shadow" x="28" y="35" width="516" height="570" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="28" fill="url(#background)"/>
+  <path d="M0 510C178 434 294 593 516 526C716 466 845 360 1280 454V640H0V510Z" fill="#EDE9FE"/>
+  <path d="M0 550C240 464 351 618 578 552C767 497 970 415 1280 496V640H0V550Z" fill="#DBEAFE" fill-opacity="0.75"/>
+  <g opacity="0.38" stroke="#64748B" stroke-width="1">
+    <path d="M575 82H1202"/>
+    <path d="M575 152H1202"/>
+    <path d="M575 222H1202"/>
+    <path d="M575 292H1202"/>
+    <path d="M575 362H1202"/>
+    <path d="M575 432H1202"/>
+    <path d="M575 502H1202"/>
+    <path d="M690 58V566"/>
+    <path d="M820 58V566"/>
+    <path d="M950 58V566"/>
+    <path d="M1080 58V566"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="70" width="432" height="500" rx="216" fill="#FACC15"/>
+    <image href="muneer-portrait.jpeg" x="82" y="82" width="408" height="544" preserveAspectRatio="xMidYMid slice" clip-path="url(#portraitClip)"/>
+    <rect x="82" y="82" width="408" height="476" rx="204" stroke="#FFFFFF" stroke-width="8"/>
+  </g>
+  <circle cx="92" cy="108" r="10" fill="#7C3AED"/>
+  <path d="M70 540C70 518 88 500 110 500H152C174 500 192 518 192 540V570H70V540Z" fill="#0F172A"/>
+  <text x="92" y="548" fill="white" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1.6">M / A</text>
+
+  <rect x="575" y="76" width="187" height="34" rx="17" fill="#0F172A"/>
+  <circle cx="598" cy="93" r="5" fill="#22C55E"/>
+  <text x="614" y="98" fill="white" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1.1">OPEN TO BUILD</text>
+
+  <text x="575" y="198" fill="#111827" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="-5">MUNEER</text>
+  <text x="575" y="282" fill="url(#accent)" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="-5">ALI</text>
+  <rect x="575" y="314" width="586" height="2" fill="#0F172A" fill-opacity="0.14"/>
+  <text x="575" y="360" fill="#0F172A" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">FULL-STACK DEVELOPER / WEB3 BUILDER</text>
+  <text x="575" y="405" fill="#475569" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="20">Turning curious ideas into polished digital products.</text>
+  <text x="575" y="436" fill="#475569" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="20">React · Next.js · Node.js · Solidity · AI</text>
+
+  <g transform="translate(575 486)">
+    <rect width="156" height="48" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="78" y="30" text-anchor="middle" fill="#0F172A" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Delhi, India</text>
+    <rect x="170" width="190" height="48" rx="24" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="265" y="30" text-anchor="middle" fill="#0F172A" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">Open Source</text>
+    <rect x="374" width="182" height="48" rx="24" fill="#0F172A"/>
+    <text x="465" y="30" text-anchor="middle" fill="white" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="700">MUNEERALI199</text>
+  </g>
+</svg>
