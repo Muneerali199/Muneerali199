@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="640px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1090px" height="680px" font-size="16px">
 <style>
 @font-face {
 src: local('Consolas'), local('Consolas Bold');
@@ -12,17 +12,17 @@ size-adjust: 109%;
 .value {fill: #0a3069;}
 .cc {fill: #bdc6d0;}
 .art {fill: #24292f;}
+.ok {fill: #1a7f37;}
+.dim {fill: #7d8590;}
 text, tspan {white-space: pre;}
 </style>
-<rect width="985px" height="640px" fill="#f6f8fa" rx="15"/>
-<rect x="15" y="20" width="430" height="600" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<rect width="1090px" height="680px" fill="#f6f8fa" rx="15"/>
+<rect x="15" y="20" width="430" height="620" rx="12" fill="#ffffff" stroke="#d0d7de"/>
 <rect x="15" y="20" width="430" height="34" rx="12" fill="#eaeff5"/>
 <rect x="15" y="37" width="430" height="17" fill="#eaeff5"/>
-<circle cx="38" cy="37" r="7" fill="#ff5f57"/>
-<circle cx="58" cy="37" r="7" fill="#febc2e"/>
-<circle cx="78" cy="37" r="7" fill="#28c840"/>
-<text x="100" y="41" fill="#24292f" font-size="12"><tspan font-weight="bold">muneer@ali</tspan>: ~/profile</text>
-<text x="35" y="80" fill="#57606a" class="art">
+<circle cx="38" cy="37" r="7" fill="#ff5f57"/><circle cx="58" cy="37" r="7" fill="#febc2e"/><circle cx="78" cy="37" r="7" fill="#28c840"/>
+<text x="100" y="41" fill="#24292f" font-size="12"><tspan font-weight="bold">muneer@ali</tspan>: ~/profile (zsh)</text>
+<text x="35" y="80" fill="#24292f" class="art">
 <tspan x="35" y="80">                                        </tspan>
 <tspan x="35" y="98">               .-+*****+-               </tspan>
 <tspan x="35" y="116">               %@@@@@@@@@#:             </tspan>
@@ -53,25 +53,54 @@ text, tspan {white-space: pre;}
 <tspan x="35" y="566">        *@%%%@@@@%%%%%%@@@@#.           </tspan>
 <tspan x="35" y="584">        *#%%@@@@@%%@%%%%%@%=            </tspan>
 </text>
+<text x="35" y="608" fill="#7d8590" font-size="13">
+<tspan x="35" y="608">muneer@ali ~ % ./neofetch --portrait</tspan>
+<tspan x="35" y="626" class="ok">✓ portrait loaded · ascii 40×29 · light</tspan>
+</text>
 <text x="470" y="30" fill="#24292f">
-<tspan x="470" y="30">muneer@ali</tspan>-------──────────────────────────────────────────────────
-<tspan x="470" y="50" class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">...................... </tspan><tspan class="value">macOS, Linux, Windows</tspan>
-<tspan x="470" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">.................. </tspan><tspan class="value">3 years, ~199 days as dev</tspan>
-<tspan x="470" y="90" class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">.................... </tspan><tspan class="value">Delhi, India</tspan>
-<tspan x="470" y="110" class="cc">. </tspan><tspan class="key">Shell</tspan><tspan class="cc">................... </tspan><tspan class="value">zsh, bash</tspan>
-<tspan x="470" y="130" class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">..................... </tspan><tspan class="value">VSCode, Neovim</tspan>
-<tspan x="470" y="150" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc">... </tspan><tspan class="value">TypeScript, JavaScript, Python, Solidity</tspan>
-<tspan x="470" y="170" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan><tspan class="cc">...... </tspan><tspan class="value">HTML, CSS, JSON, SQL, YAML</tspan>
-<tspan x="470" y="190" class="cc">. </tspan><tspan class="key">Languages.Real</tspan><tspan class="cc">.......... </tspan><tspan class="value">Hindi, English, Urdu</tspan>
-<tspan x="470" y="210" class="cc">. </tspan><tspan class="key">Projects</tspan><tspan class="cc">................ </tspan><tspan class="value">Windmill EVM, DraftDeckAI, Thunder, Uptime</tspan>
-<tspan x="470" y="230" class="cc">. </tspan><tspan class="key">Open Source</tspan><tspan class="cc">............. </tspan><tspan class="value">AOSSIE-Org, Google-DeepMind, NVIDIA</tspan>
-<tspan x="470" y="260">- Contact</tspan>-------──────────────────────────────────────────────────
-<tspan x="470" y="280" class="cc">. </tspan><tspan class="key">Portfolio</tspan><tspan class="cc">............... </tspan><tspan class="value">muneerali.vercel.app</tspan>
-<tspan x="470" y="300" class="cc">. </tspan><tspan class="key">Email</tspan><tspan class="cc">................... </tspan><tspan class="value">alimuneerali245@gmail.com</tspan>
-<tspan x="470" y="320" class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">................ </tspan><tspan class="value">muneerali199</tspan>
-<tspan x="470" y="340" class="cc">. </tspan><tspan class="key">X</tspan><tspan class="cc">....................... </tspan><tspan class="value">@muneerali199</tspan>
-<tspan x="470" y="370">- GitHub Stats</tspan>-------──────────────────────────────────────────────────
-<tspan x="470" y="390" class="cc">. </tspan><tspan class="key">Repos</tspan><tspan class="cc">................... </tspan><tspan class="value">205</tspan><tspan class="key"> | Followers</tspan><tspan class="cc">............... </tspan><tspan class="value">62</tspan>
-<tspan x="470" y="410" class="cc">. </tspan><tspan class="key">Stars</tspan><tspan class="cc">................... </tspan><tspan class="value">122</tspan><tspan class="key"> | Following</tspan><tspan class="cc">............... </tspan><tspan class="value">42</tspan>
+<tspan x="470" y="30">muneer@ali</tspan> <tspan class="cc">─</tspan> <tspan class="value">full-stack · web3 · AI</tspan>
+<tspan x="470" y="50" class="cc">──────────────────────────────────────────────────────────</tspan>
+<tspan x="470" y="80" class="cc">┌─ System</tspan><tspan class="cc">──────────────────────────────────────────────────</tspan>
+<tspan x="470" y="100" class="cc">. </tspan><tspan class="key">OS</tspan><tspan class="cc">........................ </tspan><tspan class="value">macOS, Linux, Windows</tspan>
+<tspan x="470" y="120" class="cc">. </tspan><tspan class="key">Host</tspan><tspan class="cc">...................... </tspan><tspan class="value">Delhi, India</tspan>
+<tspan x="470" y="140" class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">.................... </tspan><tspan class="value">3 yrs building with code</tspan>
+<tspan x="470" y="160" class="cc">. </tspan><tspan class="key">Shell</tspan><tspan class="cc">..................... </tspan><tspan class="value">zsh, bash</tspan>
+<tspan x="470" y="180" class="cc">. </tspan><tspan class="key">IDE</tspan><tspan class="cc">....................... </tspan><tspan class="value">VSCode, Neovim</tspan>
+<tspan x="470" y="210" class="cc">┌─ Languages</tspan><tspan class="cc">──────────────────────────────────────────────────</tspan>
+<tspan x="470" y="230" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan><tspan class="cc">..... </tspan><tspan class="value">TypeScript, JS, Python, Solidity</tspan>
+<tspan x="470" y="250" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan><tspan class="cc">........ </tspan><tspan class="value">HTML, CSS, JSON, SQL, YAML</tspan>
+<tspan x="470" y="270" class="cc">. </tspan><tspan class="key">Languages.Blockchain</tspan><tspan class="cc">...... </tspan><tspan class="value">Solidity, Hardhat, Web3.js</tspan>
+<tspan x="470" y="290" class="cc">. </tspan><tspan class="key">Languages.Real</tspan><tspan class="cc">............ </tspan><tspan class="value">Hindi, English, Urdu</tspan>
+<tspan x="470" y="320" class="cc">┌─ Projects</tspan><tspan class="cc">──────────────────────────────────────────────────</tspan>
+<tspan x="470" y="340" class="cc">. </tspan><tspan class="key">Windmill EVM</tspan><tspan class="cc">.............. </tspan><tspan class="value">EVM web UI · StabilityNexus ↗</tspan>
+<tspan x="470" y="360" class="cc">. </tspan><tspan class="key">DraftDeckAI</tspan><tspan class="cc">............... </tspan><tspan class="value">AI drafts · 80★</tspan>
+<tspan x="470" y="380" class="cc">. </tspan><tspan class="key">Thunder</tspan><tspan class="cc">................... </tspan><tspan class="value">speed tooling · 15★</tspan>
+<tspan x="470" y="400" class="cc">. </tspan><tspan class="key">Uptime</tspan><tspan class="cc">.................... </tspan><tspan class="value">monitoring · featured</tspan>
+<tspan x="470" y="420" class="cc">. </tspan><tspan class="key">RakshakAI</tspan><tspan class="cc">................. </tspan><tspan class="value">guardian AI · 5★</tspan>
+<tspan x="470" y="450" class="cc">┌─ Contact</tspan><tspan class="cc">──────────────────────────────────────────────────</tspan>
+<tspan x="470" y="470" class="cc">. </tspan><tspan class="key">Portfolio</tspan><tspan class="cc">................. </tspan><tspan class="value">muneerali.vercel.app ↗</tspan>
+<tspan x="470" y="490" class="cc">. </tspan><tspan class="key">Email</tspan><tspan class="cc">..................... </tspan><tspan class="value">alimuneerali245@gmail.com</tspan>
+<tspan x="470" y="510" class="cc">. </tspan><tspan class="key">LinkedIn</tspan><tspan class="cc">.................. </tspan><tspan class="value">linkedin.com/in/muneerali199 ↗</tspan>
+<tspan x="470" y="530" class="cc">. </tspan><tspan class="key">X</tspan><tspan class="cc">......................... </tspan><tspan class="value">x.com/muneerali199 ↗</tspan>
+</text>
+<rect x="470" y="560" width="600" height="100" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+<text x="484" y="584" fill="#24292f" font-size="13" font-weight="bold">GitHub Overview</text>
+<text x="484" y="610" fill="#0a3069" font-size="13">
+<tspan x="484" y="610">repos: <tspan class="ok" font-weight="bold">205</tspan>   stars: <tspan class="ok" font-weight="bold">175</tspan>   followers: <tspan class="ok" font-weight="bold">62</tspan></tspan>
+<tspan x="484" y="632">top: <tspan class="ok">TypeScript</tspan> · <tspan class="ok">Python</tspan> · <tspan class="ok">JavaScript</tspan> · <tspan class="ok">Dart</tspan></tspan>
+</text>
+<text x="470" y="680" fill="#bdc6d0" font-size="12">palette:</text>
+<rect x="485" y="676" width="24" height="16" rx="3" fill="#ff5f57"/>
+<rect x="515" y="676" width="24" height="16" rx="3" fill="#febc2e"/>
+<rect x="545" y="676" width="24" height="16" rx="3" fill="#28c840"/>
+<rect x="575" y="676" width="24" height="16" rx="3" fill="#3fb950"/>
+<rect x="605" y="676" width="24" height="16" rx="3" fill="#58a6ff"/>
+<rect x="635" y="676" width="24" height="16" rx="3" fill="#bc8cff"/>
+<rect x="665" y="676" width="24" height="16" rx="3" fill="#f778ba"/>
+<rect x="695" y="676" width="24" height="16" rx="3" fill="#e6edf3"/>
+<text x="733" y="689" fill="#bdc6d0" font-size="12">github · light</text>
+<text x="470" y="720" fill="#24292f" font-size="14">
+<tspan x="470" y="720" class="ok" font-weight="bold">muneer@ali</tspan> <tspan fill="#bdc6d0">~/</tspan> <tspan fill="#bdc6d0">$</tspan> ./deploy-profile.sh --ready
+<tspan x="470" y="742" class="ok">✓ deployed</tspan> <tspan class="dim">light+dark heroes · ASCII art · light</tspan>
 </text>
 </svg>
