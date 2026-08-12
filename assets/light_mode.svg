@@ -85,16 +85,6 @@ text, tspan {white-space: pre;}
 <tspan x="454" y="610">repos: <tspan class="ok" font-weight="bold">205</tspan>   stars: <tspan class="ok" font-weight="bold">175</tspan>   followers: <tspan class="ok" font-weight="bold">62</tspan></tspan>
 <tspan x="454" y="632">top: <tspan class="ok">TypeScript</tspan> · <tspan class="ok">Python</tspan> · <tspan class="ok">JavaScript</tspan> · <tspan class="ok">Dart</tspan></tspan>
 </text>
-<text x="440" y="680" fill="#bdc6d0" font-size="12">palette:</text>
-<rect x="455" y="676" width="24" height="16" rx="3" fill="#ff5f57"/>
-<rect x="485" y="676" width="24" height="16" rx="3" fill="#febc2e"/>
-<rect x="515" y="676" width="24" height="16" rx="3" fill="#28c840"/>
-<rect x="545" y="676" width="24" height="16" rx="3" fill="#3fb950"/>
-<rect x="575" y="676" width="24" height="16" rx="3" fill="#58a6ff"/>
-<rect x="605" y="676" width="24" height="16" rx="3" fill="#bc8cff"/>
-<rect x="635" y="676" width="24" height="16" rx="3" fill="#f778ba"/>
-<rect x="665" y="676" width="24" height="16" rx="3" fill="#e6edf3"/>
-<text x="703" y="689" fill="#bdc6d0" font-size="12">github · light</text>
 <text x="440" y="720" fill="#24292f" font-size="14">
 <tspan x="440" y="720" class="ok" font-weight="bold">muneer@ali</tspan> <tspan fill="#bdc6d0">~/</tspan> <tspan fill="#bdc6d0">$</tspan> ./deploy-profile.sh --ready
 <tspan x="440" y="742" class="ok">✓ deployed</tspan> <tspan class="dim">light+dark heroes · ASCII art · light</tspan>
